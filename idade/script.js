@@ -8,12 +8,12 @@ function age(event) {
     nome = document.getElementById("nome").value;
 
     if (idade < 11) {
-        document.getElementById("resultado").innerHTML = "Sua idade é: " + idade + "<br/>" + nome + " é uma criança!";
+        document.getElementById("resultado").innerHTML = "A idade do paciente é: " + idade + "<br/>" + nome + " é uma criança";
     } else if (idade >= 12 && idade <= 20) {
-        document.getElementById("resultado").innerHTML = "Sua idade é: " + idade + "<br/>" + nome + " é um adolescente!";
+        document.getElementById("resultado").innerHTML = "A idade do paciente é: " + idade + "<br/>" + nome + " é um adolescente";
     } else if (idade >= 21 && idade <= 65) {
-        document.getElementById("resultado").innerHTML = "Sua idade é: " + idade + "<br/>" + nome +" é um adulto!";
+        document.getElementById("resultado").innerHTML = "A idade do pacienteé: " + idade + "<br/>" + nome +" é um adulto";
     } else if (idade > 65) {
-        document.getElementById("resultado").innerHTML = "Sua idade é: " + idade + "<br/>" + nome +" é um idoso!";
+        document.getElementById("resultado").innerHTML = "A idade do paciente é: " + idade + "<br/>" + nome +" é um idoso";
     }
 }

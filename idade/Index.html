@@ -1,96 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de idade</title>
+</head>
+<body>
+    
+</body>
+</html>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <script>
-        function idade() {
-            var resultado;
-            var idade = parseInt(document.getElementById("idade").value);
-            var nome = document.getElementById("nome").value;
-            // console.log(nome);
-            // console.log(idade);
-
-            if (idade <= 11) {
-                resultado = "criança";
-            } else if (idade <= 12 && 20) {
-                resultado = "adolescente";
-            } else if (idade < 21 && 65) {
-                resultado = "adulto";
-            } else if (idade < 65) {
-                resultado = "idoso";
-            
-            document.getElementById("resultado").innerHTML = nome + " é " + resultado;
-        }
-    </script>
+  
     <style>
-       * {
-            margin: 0px auto;
-            padding: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-style: oblique;
-            font-size: 18px;
-            border: 1px solid transparent;
-            width: 80%;
-        }
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-        main {
-            border: 1px dashed #ffc06e;
-            margin: 8px auto;
-            padding: 8px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            /* width: 80%; */
-            min-width: 30%;
-            background-color: antiquewhite;
-        }
+        :root{
+    --primary-color: #99e484;
+    --secundary-color: rgb(2, 190, 31);
+    --tertiay-color: rgb(255, 255, 255);
+}
+body{
+background-color: var(--primary-color);
 
-        header {
-            
-            margin: 8px auto;
-            padding: 8px;
-            border: 1px dotted #e2b36d;
-            text-align: center;
-            align-items: center;
-            background-color: #ffff505c;
-        }
+}
+.container{
+    height: 425px;
+    width: 360px;
+    margin: 100px auto;
+    background-color: #f7f7f7f7;
+    border-radius: 20px;
+    text-align: center;
+}
+.h1{
+    background-color: var(--secundary-color);
+    color: var(--tertiay-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+.botao{
+border-radius: 5px 5px 5px 5px;
+background-color: var(--secundary-color);
+color: white;
+height: 30px;
+width: 80;
 
-        footer {
-            margin: 64px auto;
-            background-color: #ffff0046;
-            border: 1px solid #ffff00a0
-        }
-
-        button {
-            width: 50%;
-            height: 32px;
-            border-radius: 30px;
-            background: #ffc06e;
-        }
-
-        .row {
-            display: flex;
-            flex-direction: row;
-            margin: 5px auto;
-        }
-
-        label {
-            margin-right: 10px;
-        }
-
-        input {
-            border: 2px solid #ff00002d;
-        }
+}
+        
+       
     </style>
  
 </head>
 
 <body>
-
-    <h1 id="titulo">Classificação por idade</h1> <br><br>
+<div class="container">
+    <h1 id="titulo" class="h1">Classificação por idade</h1> <br><br>
 
     
 
@@ -100,7 +74,7 @@
         <input type="text" nome="nome" id="nome" placeholder="Exemplo: Nome" /><br><br>
         <label>Digite sua idade:</label><br>
         <input type="text" nome="idade" id="idade" placeholder="Exemplo: 16" /><br><br>
-        <button type="submit" value="enviar">ENVIAR</button>
+        <button type="submit" value="enviar" class="botao">Avaliar a idade</button>
 
     </form>
 
@@ -109,8 +83,9 @@
     <div id="resultado"></div>
 
     <footer>
-        <p style="text-align: center;">© 2023 - Senai </p>
+       <br><br><br><br><br><p style="text-align: center;">© 2023 - Senai "Celso Charuri"- Sumaré- SP </p>
     </footer>
+</div>
 </body>
 </html>
  
